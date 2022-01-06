@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './comp/header/header.component';
 import { ParallaxComponent } from './comp/parallax/parallax.component';
+import { FooterComponent } from './comp/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ParallaxComponent
+    ParallaxComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
