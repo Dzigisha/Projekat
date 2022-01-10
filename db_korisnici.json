@@ -1,0 +1,19 @@
+{
+  "korisnici": [
+    {
+      "id": 0,
+      "username": "igor",
+      "password": "1234"
+    },
+    {
+      "id": 1,
+      "username": "boban",
+      "password": "bobic321"
+    },
+    {
+      "id": 2,
+      "username": "zoki_matic",
+      "password": "zekzekdadumle332"
+    }
+  ]
+}

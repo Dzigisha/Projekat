@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "server_korisnici": "json-server --watch db_korisnici.json"
   },
   "private": true,
   "dependencies": {
