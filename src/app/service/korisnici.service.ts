@@ -2,7 +2,11 @@ import { Injectable } from '@angular/core';
 import { korisnik } from 'korisnici_klase';
 import{HttpClient,HttpHeaders, HttpParams} from '@angular/common/http'
 import { Observable,of } from 'rxjs';
-
+const httpOptions={
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json'
+  })
+}
 @Injectable({
   providedIn: 'root'
 })
@@ -16,10 +20,19 @@ export class KorisniciService {
     return this.http.get<korisnik[]>(this.korisniciAPI)
 
   }
-  //dodavanje korisnika preko http
-  postKorisnik(){}
+  
+  // dodavanje korisnika preko http
+  postKorisnik(korisnik:korisnik):Observable<korisnik>{
+ 
+    return this.http.post<korisnik>(this.korisniciAPI,korisnik,httpOptions)
+      
+
+  }
   //update korisnika preko http
-  putKorisnik(){}
+  putKorisnik(korisnik:korisnik):Observable<korisnik>{
+    const url = `${this.korisniciAPI}/${korisnik.id}`;
+    return this.http.put<korisnik>(url,korisnik,httpOptions)
+  }
   //brisanje korisnika preko http
   deleteKorisnik(korisnik:korisnik):Observable<korisnik>{
     const url = `${this.korisniciAPI}/${korisnik.id}`;

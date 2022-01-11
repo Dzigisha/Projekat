@@ -3,7 +3,7 @@
     {
       "id": 0,
       "username": "igor",
-      "password": "1234"
+      "password": "12345"
     },
     {
       "id": 1,
@@ -14,6 +14,11 @@
       "id": 2,
       "username": "zoki_matic",
       "password": "zekzekdadumle332"
+    },
+    {
+      "id": 3,
+      "username": "dasdasd",
+      "password": "asdasdsa"
     }
   ]
 }

@@ -11,6 +11,12 @@ import { KarticaComponent } from './comp/kartica/kartica.component';
 import { KorisnikKarticaComponent } from './comp/korisnik-kartica/korisnik-kartica.component';
 import { GrupaKorisniciComponent } from './comp/grupa-korisnici/grupa-korisnici.component';
 import { HttpClientModule } from '@angular/common/http';
+import { KorisnikKreacijaComponent } from './comp/korisnik-kreacija/korisnik-kreacija.component';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './stranice/login/login.component';
+import { GlavnaComponent } from './stranice/glavna/glavna.component';
+import { RegistracijaComponent } from './stranice/registracija/registracija.component';
+import { AdminPanelComponent } from './stranice/admin-panel/admin-panel.component';
 
 
 @NgModule({
@@ -22,13 +28,20 @@ import { HttpClientModule } from '@angular/common/http';
     KarticaComponent,
     KorisnikKarticaComponent,
     GrupaKorisniciComponent,
+    KorisnikKreacijaComponent,
+    LoginComponent,
+    GlavnaComponent,
+    RegistracijaComponent,
+    AdminPanelComponent,
+   
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

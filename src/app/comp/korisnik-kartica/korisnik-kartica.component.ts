@@ -10,12 +10,17 @@ export class KorisnikKarticaComponent implements OnInit {
 
  @Input()  korisnik!:korisnik
  @Output() brisanjeKlik:EventEmitter<korisnik> = new EventEmitter();
-  constructor() { }
+ @Output() izmeniKlik:EventEmitter<korisnik> = new EventEmitter();
+
+ constructor() { }
 
   ngOnInit(): void {
   }
   brisanje(korisnik:korisnik){
     this.brisanjeKlik.emit(korisnik);
+  }
+  izmena(){
+    this.izmeniKlik.emit(this.korisnik);
   }
   
 
