@@ -15,6 +15,7 @@ export class KorisnikKreacijaComponent implements OnInit {
   constructor(private korisnikServis:KorisniciService) { }
 
   ngOnInit(): void {
+    
   }
 
   registracija(){
@@ -22,7 +23,7 @@ export class KorisnikKreacijaComponent implements OnInit {
       alert('Polje je prazno')
     }
     const novi_korisnik={
-      id:Object.keys(this.korisnikServis.getKorisnici()).length+1,
+      id:Object.keys(this.korisnikServis.getKorisnici().subscribe()).length,
       username:this.username,
       password:this.password
     }

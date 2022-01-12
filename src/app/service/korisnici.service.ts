@@ -15,28 +15,28 @@ export class KorisniciService {
   private korisniciAPI = 'http://localhost:3000/korisnici';
   constructor(private http:HttpClient) { }
 
-  //preuzimanje liste u observable preko http
+  //HTTP METODE Korisnici
+  
   getKorisnici():Observable<korisnik[]>{
     return this.http.get<korisnik[]>(this.korisniciAPI)
-
   }
   
-  // dodavanje korisnika preko http
   postKorisnik(korisnik:korisnik):Observable<korisnik>{
- 
     return this.http.post<korisnik>(this.korisniciAPI,korisnik,httpOptions)
-      
-
   }
-  //update korisnika preko http
+ 
   putKorisnik(korisnik:korisnik):Observable<korisnik>{
     const url = `${this.korisniciAPI}/${korisnik.id}`;
     return this.http.put<korisnik>(url,korisnik,httpOptions)
   }
-  //brisanje korisnika preko http
+ 
   deleteKorisnik(korisnik:korisnik):Observable<korisnik>{
     const url = `${this.korisniciAPI}/${korisnik.id}`;
     return this.http.delete<korisnik>(url);
 
   }
+
+  //
+ 
+
 }

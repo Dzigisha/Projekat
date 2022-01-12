@@ -78,8 +78,11 @@ body,html{
     font-weight: 400;
 }
 .footer{
-    margin-top: 200px;
+    margin-top: 300px;
     background-color: black;
+   
+    width: 100%;
+   
 }
 .dugme {
     

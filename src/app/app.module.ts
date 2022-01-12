@@ -17,6 +17,7 @@ import { LoginComponent } from './stranice/login/login.component';
 import { GlavnaComponent } from './stranice/glavna/glavna.component';
 import { RegistracijaComponent } from './stranice/registracija/registracija.component';
 import { AdminPanelComponent } from './stranice/admin-panel/admin-panel.component';
+import { UspesnaRegistracijaComponent } from './stranice/uspesna-registracija/uspesna-registracija.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { AdminPanelComponent } from './stranice/admin-panel/admin-panel.componen
     GlavnaComponent,
     RegistracijaComponent,
     AdminPanelComponent,
+    UspesnaRegistracijaComponent,
    
     
   ],
