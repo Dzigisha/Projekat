@@ -1,19 +1,53 @@
 {
-  "posts": [
+  "recepti": [
+    {
+      "id": 0,
+      "naziv": "Spagete bolonjeze",
+      "zemlja": "Italija"
+    },
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "naziv": "Becka snicla",
+      "zemlja": "Austrija"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "naziv": "Giros",
+      "zemlja": "Grcka"
+    },{
+      "id": 3,
+      "naziv": "Kebab",
+      "zemlja": "Turska"
+    },
+    {
+      "id": 4,
+      "naziv": "Pizza",
+      "zemlja": "Italija"
+    },
+    {
+      "id": 5,
+      "naziv": "Sushi",
+      "zemlja": "Japan"
+    },
+    {
+      "id": 6,
+      "naziv": "Fritata",
+      "zemlja": "Spanija"
+    },
+    {
+      "id": 7,
+      "naziv": "Borsc",
+      "zemlja": "Rusija"
+    },
+    {
+      "id": 8,
+      "naziv": "Hamburger",
+      "zemlja": "Sjedinjene Americke drzave"
+    },
+    {
+      "id": 9,
+      "naziv": "Sarma",
+      "zemlja": "Srbija"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

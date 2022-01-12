@@ -7,7 +7,7 @@
     },
     {
       "id": 1,
-      "username": "boban",
+      "username": "boban_kokan",
       "password": "bobic321"
     },
     {
@@ -29,14 +29,6 @@
       "id": 5,
       "username": "baki",
       "password": "basd"
-    },
-    {
-      "id": 7,
-      "username": "dsasda",
-      "password": "aasdasd"
-    },
-    {
-      "id": 6
     }
   ]
 }
