@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { recept } from 'recepti_klasa';
+import { ReceptiService } from 'src/app/service/recepti.service';
 
 @Component({
   selector: 'app-glavna',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GlavnaComponent implements OnInit {
 
-  constructor() { }
+  recepti!:recept[];
+  constructor( private receptServis:ReceptiService) { }
 
   ngOnInit(): void {
+    this.receptServis.getRecepti().subscribe((recepti)=>
+    this.recepti=recepti  )
   }
 
 }

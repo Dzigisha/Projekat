@@ -25,8 +25,9 @@ export class KorisnikKreacijaComponent implements OnInit {
     const novi_korisnik={
       id:Object.keys(this.korisnikServis.getKorisnici().subscribe()).length,
       username:this.username,
-      password:this.password
-    }
+      password:this.password,
+      admin:false
+        }
     
     this.klikDodavanje.emit(novi_korisnik)
 

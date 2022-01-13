@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { recept } from 'recepti_klasa';
 
 @Component({
   selector: 'app-kartica',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KarticaComponent implements OnInit {
 
+  @Input() recept!:recept
   constructor() { }
 
   ngOnInit(): void {

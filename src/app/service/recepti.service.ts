@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { recept } from 'recepti_klasa';
 @Injectable({
   providedIn: 'root'
 })
@@ -7,10 +9,12 @@ export class ReceptiService {
 
   receptiApi= "http://localhost:3001/recepti"
 
-  constructor(private http:HttpClientModule) { }
+  constructor(private http:HttpClient) { }
   
   
-  getRecepti(){
+  getRecepti():Observable<recept[]>{
+    return this.http.get<recept[]>(this.receptiApi)
+
 
   }
 }

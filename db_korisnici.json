@@ -3,32 +3,32 @@
     {
       "id": 0,
       "username": "igor",
-      "password": "12345"
+      "password": "12345",
+      "admin": "true"
     },
     {
       "id": 1,
       "username": "boban_kokan",
-      "password": "bobic321"
+      "password": "bobic321",
+      "admin": "false"
     },
     {
       "id": 2,
       "username": "zoki_matic",
-      "password": "zekzekdadumle332"
+      "password": "zekzekdadumle332",
+      "admin": "true"
     },
     {
       "id": 3,
       "username": "dasdasd",
-      "password": "asdasdsa"
+      "password": "asdasdsa",
+      "admin": "false"
     },
     {
       "id": 4,
       "username": "asddd",
-      "password": "ddddd"
-    },
-    {
-      "id": 5,
-      "username": "baki",
-      "password": "basd"
+      "password": "ddddd",
+      "admin": "false"
     }
   ]
 }
