@@ -34,7 +34,8 @@ import { UspesnaRegistracijaComponent } from './stranice/uspesna-registracija/us
     GlavnaComponent,
     RegistracijaComponent,
     AdminPanelComponent,
-    UspesnaRegistracijaComponent,
+    UspesnaRegistracijaComponent
+    
    
     
   ],
@@ -43,7 +44,8 @@ import { UspesnaRegistracijaComponent } from './stranice/uspesna-registracija/us
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

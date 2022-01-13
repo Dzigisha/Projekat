@@ -17,5 +17,14 @@ export class ReceptiService {
 
 
   }
+  getSortDesc():Observable<recept[]>{
+    return this.http.get<recept[]>(`${this.receptiApi}?_sort=trajanje&_order=desc`)
+  }
+  getSortAsc():Observable<recept[]>{
+    return this.http.get<recept[]>(`${this.receptiApi}?_sort=trajanje&_order=asc`)
+  }
+  getPretraga(rec:string):Observable<recept[]>{
+    return this.http.get<recept[]>(`${this.receptiApi}?q=${rec}`)
+  }
 }
 
