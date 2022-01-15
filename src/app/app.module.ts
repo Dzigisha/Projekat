@@ -18,6 +18,11 @@ import { GlavnaComponent } from './stranice/glavna/glavna.component';
 import { RegistracijaComponent } from './stranice/registracija/registracija.component';
 import { AdminPanelComponent } from './stranice/admin-panel/admin-panel.component';
 import { UspesnaRegistracijaComponent } from './stranice/uspesna-registracija/uspesna-registracija.component';
+import { KarticaSvidjanjeComponent } from './comp/kartica-svidjanje/kartica-svidjanje.component';
+import { StoreModule } from '@ngrx/store';
+import {CounterState, counterReducer} from 'Reduktor/counter.reducer'
+import { reduce } from 'rxjs';
+
 
 
 @NgModule({
@@ -34,7 +39,12 @@ import { UspesnaRegistracijaComponent } from './stranice/uspesna-registracija/us
     GlavnaComponent,
     RegistracijaComponent,
     AdminPanelComponent,
-    UspesnaRegistracijaComponent
+    UspesnaRegistracijaComponent,
+    KarticaSvidjanjeComponent,
+    
+
+   
+    
     
    
     
@@ -45,6 +55,9 @@ import { UspesnaRegistracijaComponent } from './stranice/uspesna-registracija/us
     NgbModule,
     HttpClientModule,
     FormsModule,
+    StoreModule.forRoot({count:counterReducer})
+   
+  
 
   ],
   providers: [],
